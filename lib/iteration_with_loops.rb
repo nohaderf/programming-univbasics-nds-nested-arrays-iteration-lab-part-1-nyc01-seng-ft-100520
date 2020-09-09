@@ -3,15 +3,10 @@
   
   
 def find_even_values(src)
-  array_integers = [
-    [10, 11],
-    [99, 50, 3, 4], 
-    [23, 41]
-    ]
   row_index = 0
-  while row_index < array_integers.length do
+  while row_index < src.length do
     element_index = 0
-    while element_index < array_integers[row_index].length do
+    while element_index < src[row_index].length do
       if (array_integers[row_index][element_index]).even?
         p array_integers[row_index][element_index]
       end 
